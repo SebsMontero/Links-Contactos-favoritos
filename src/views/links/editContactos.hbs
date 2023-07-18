@@ -1,0 +1,41 @@
+<div class="col-md-5">
+    <div class="card text-center">
+        <div class="card-header">
+            <h3>Registrar</h3>
+        </div>
+        <div class="card-body">
+            <form action="/contactos/editContacto/{{contacto.id}}" method="POST">
+                <div class="form-group">
+                    <input type="text" value="{{contacto.nombre}}" name="nombre" placeholder="Nombre" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" value="{{contacto.telefono}}" name="telefono" placeholder="Teléfono" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" value="{{contacto.correo}}" name="correo" placeholder="Correo electrónico" class="form-control">
+                </div>
+                <div class="form-group">
+                    <select name="pais" class="form-control">
+                        <option value="">Selecciona una opción</option>
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="albania">Albania</option>
+                        <option value="algeria">Algeria</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="zimbabwe">Zimbabwe</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" value="{{contacto.ciudad}}" name="ciudad" placeholder="Ciudad" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" value="{{contacto.direccion}}" name="direccion" placeholder="Dirección" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">Actualizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
